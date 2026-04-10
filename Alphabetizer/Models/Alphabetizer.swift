@@ -23,6 +23,9 @@ class Alphabetizer {
         let userSortedTiles = tiles.sorted {
             $0.position.x < $1.position.x
         }
+        let alphabeticallySortedTiles = tiles.sorted {
+            $0.word.lexicographicallyPrecedes($1.word)
+        }
 
         // TODO: Compare alphabetical order to position
         isAlphabetized.toggle()
