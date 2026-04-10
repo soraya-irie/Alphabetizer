@@ -1,6 +1,7 @@
 import Foundation
 
-struct Tile: Identifiable {
+@Observable
+class Tile: Identifiable {
     let id = UUID()
 
     var word: String
