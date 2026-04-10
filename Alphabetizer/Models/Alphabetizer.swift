@@ -36,8 +36,7 @@ class Alphabetizer {
 
         // Flip over correct tiles
         for (tile, correctTile) in zip(userSortedTiles, alphabeticallySortedTiles) {
-            // TODO: Check if this tile is in the correct position
-            let tileIsAlphabetized = isAlphabetized
+            let tileIsAlphabetized = tile == correctTile
             tile.flipped = tileIsAlphabetized
         }
 
