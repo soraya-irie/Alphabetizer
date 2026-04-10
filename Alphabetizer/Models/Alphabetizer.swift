@@ -38,7 +38,7 @@ class Alphabetizer {
             tile.flipped = tileIsAlphabetized
         }
 
-        Task {
+        Task { @MainActor in
             // Delay 2 seconds
             try await Task.sleep(for: .seconds(2))
 
