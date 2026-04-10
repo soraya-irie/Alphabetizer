@@ -38,14 +38,16 @@ class Alphabetizer {
             tile.flipped = tileIsAlphabetized
         }
 
-        // Delay 2 seconds
-        try await Task.sleep(for: .seconds(2))
+        Task {
+            // Delay 2 seconds
+            try await Task.sleep(for: .seconds(2))
 
-        // If alphabetized, generate new tiles
+            // If alphabetized, generate new tiles
 
-        // Flip tiles back to words
+            // Flip tiles back to words
 
-        // Display instructions
+            // Display instructions
+        }
     }
 
     // MARK: private implementation
