@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct WordCanvas: View {
+    @Environment(Alphabetizer.self) private var alphabetizer
     @State private var tiles: [Tile] = [
         Tile(word: "First"),
         Tile(word: "Second"),
