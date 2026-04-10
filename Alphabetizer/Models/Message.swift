@@ -1,6 +1,6 @@
 import Foundation
 
-enum Message {
+enum Message: String {
     case instructions
     case tryAgain
     case youWin
