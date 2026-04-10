@@ -17,7 +17,7 @@ struct WordCanvas: View {
                         .frame(width: Tile.placeholderSize, height: Tile.placeholderSize)
                 }
             }
-            ForEach($tiles) { $tile in
+            ForEach(tiles) { tile in
                 TileView(tile: tile)
                     .offset(tile.centeredOffset)
                     .gesture(DragGesture().onChanged { value in
