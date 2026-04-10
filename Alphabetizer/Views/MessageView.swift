@@ -10,6 +10,8 @@ struct MessageView: View {
 }
 
 #Preview {
-    MessageView()
-        .environment(Alphabetizer())
+    let alphabetizer = Alphabetizer()
+    alphabetizer.message = .youWin
+    return MessageView()
+        .environment(alphabetizer)
 }
