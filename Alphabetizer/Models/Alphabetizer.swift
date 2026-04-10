@@ -69,9 +69,7 @@ class Alphabetizer {
             }
         } else {
             // Assign new words to existing tiles
-            for index in 0..<tileCount {
-                let tile = tiles[index]
-                let word = newWords[index]
+            for (tile, word) in zip(tiles, newWords) {
                 tile.word = word
             }
         }
