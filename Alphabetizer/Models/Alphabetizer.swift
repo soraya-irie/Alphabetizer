@@ -16,8 +16,22 @@ class Alphabetizer {
 
     ///  Checks if tiles are in alphabetical order
     func submit() {
-        // TODO: Implement submit
+        // Check if the tiles are alphabetized
+
+        // If alphabetized, increment the score
         score += 1
+
+        // Update the message to win or lose
+
+        // Flip over correct tiles
+
+        // Delay 2 seconds
+
+        // If alphabetized, generate new tiles
+
+        // Flip tiles back to words
+
+        // Display instructions
     }
 
     // MARK: private implementation
