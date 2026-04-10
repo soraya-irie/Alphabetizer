@@ -39,6 +39,7 @@ class Alphabetizer {
         }
 
         // Delay 2 seconds
+        try await Task.sleep(for: .seconds(2))
 
         // If alphabetized, generate new tiles
 
