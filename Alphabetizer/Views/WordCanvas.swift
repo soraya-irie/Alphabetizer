@@ -30,7 +30,10 @@ struct WordCanvas: View {
             setInitialTilePositions()
         }
         .onChange(of: alphabetizer.message) { oldValue, newValue in
-
+            switch (oldValue, newValue) {
+            default:
+                break
+            }
         }
     }
 }
