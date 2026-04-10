@@ -32,6 +32,11 @@ class Alphabetizer {
         message = isAlphabetized ? .youWin : .tryAgain
 
         // Flip over correct tiles
+        for tile in tiles {
+            // TODO: Check if this tile is in the correct position
+            let tileIsAlphabetized = isAlphabetized
+            tile.flipped = tileIsAlphabetized
+        }
 
         // Delay 2 seconds
 
