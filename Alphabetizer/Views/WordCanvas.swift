@@ -31,6 +31,10 @@ struct WordCanvas: View {
         }
         .onChange(of: alphabetizer.message) { oldValue, newValue in
             switch (oldValue, newValue) {
+            case(.youWin, .instructions):
+                withAnimation {
+                    setInitialTilePositions()
+                }
             default:
                 break
             }
