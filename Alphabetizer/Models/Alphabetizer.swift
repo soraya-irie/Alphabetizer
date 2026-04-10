@@ -14,9 +14,14 @@ class Alphabetizer {
         startNewGame()
     }
 
+    // Alternates true and false
+    private var isAlphabetized = false
+
     ///  Checks if tiles are in alphabetical order
     func submit() {
         // Check if the tiles are alphabetized
+        // TODO: Compare alphabetical order to position
+        isAlphabetized.toggle()
 
         // If alphabetized, increment the score
         score += 1
