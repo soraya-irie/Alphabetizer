@@ -11,6 +11,10 @@ struct Vocabulary {
         }
         return newWords
     }
+
+    static let icons: [String: String] = [
+        "Bear": "🐻",
+    ]
 }
 
 extension Vocabulary {
