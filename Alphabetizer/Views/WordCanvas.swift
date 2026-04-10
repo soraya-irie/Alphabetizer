@@ -29,6 +29,9 @@ struct WordCanvas: View {
         .onAppear {
             setInitialTilePositions()
         }
+        .onChange(of: alphabetizer.message) { oldValue, newValue in
+
+        }
     }
 }
 
