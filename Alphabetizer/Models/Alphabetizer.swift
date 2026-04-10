@@ -9,6 +9,7 @@ class Alphabetizer {
 
     init(vocab: Vocabulary = .oceanAnimals) {
         self.vocab = vocab
+        startNewGame()
     }
 
     ///  Checks if tiles are in alphabetical order
@@ -19,4 +20,8 @@ class Alphabetizer {
 
     // MARK: private implementation
 
+    /// Updates `tiles` with a new set of unalphabetized words
+    private func startNewGame() {
+
+    }
 }
