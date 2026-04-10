@@ -35,6 +35,7 @@ struct WordCanvas: View {
 
 #Preview {
     WordCanvas()
+        .environment(Alphabetizer())
 }
 
 extension WordCanvas {
