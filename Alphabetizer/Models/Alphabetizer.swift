@@ -7,6 +7,7 @@ class Alphabetizer {
 
     var tiles = [Tile]()
     var score = 0
+    var message: Message = .instructions
 
     init(vocab: Vocabulary = .oceanAnimals) {
         self.vocab = vocab
