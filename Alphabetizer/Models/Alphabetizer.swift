@@ -54,6 +54,7 @@ class Alphabetizer {
             }
 
             // Display instructions
+            message = .instructions
         }
     }
 
