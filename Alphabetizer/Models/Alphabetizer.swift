@@ -24,7 +24,9 @@ class Alphabetizer {
         isAlphabetized.toggle()
 
         // If alphabetized, increment the score
-        score += 1
+        if isAlphabetized {
+            score += 1
+        }
 
         // Update the message to win or lose
 
