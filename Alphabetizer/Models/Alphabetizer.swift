@@ -44,7 +44,7 @@ class Alphabetizer {
 
             // If alphabetized, generate new tiles
             if isAlphabetized {
-                tiles.removeAll()
+
                 startNewGame()
             }
 
