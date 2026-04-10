@@ -16,4 +16,7 @@ class Alphabetizer {
         // TODO: Implement submit
         score += 1
     }
+
+    // MARK: private implementation
+
 }
