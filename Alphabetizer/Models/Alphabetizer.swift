@@ -22,6 +22,9 @@ class Alphabetizer {
 
     /// Updates `tiles` with a new set of unalphabetized words
     private func startNewGame() {
-
+        let newWords = vocab.selectRandomWords(count: tileCount)
+        for word in newWords {
+            tiles.append(Tile(word: word))
+        }
     }
 }
