@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct TileView: View {
-    @State var tile: Tile
+    var tile: Tile
 
     private let borderWidth = 5.0
 
