@@ -21,7 +21,7 @@ class Alphabetizer {
     func submit() {
         // Check if the tiles are alphabetized
         let userSortedTiles = tiles.sorted {
-            $0.poisition.x < $1.position.x
+            $0.position.x < $1.position.x
         }
 
         // TODO: Compare alphabetical order to position
