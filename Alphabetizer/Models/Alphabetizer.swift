@@ -14,8 +14,6 @@ class Alphabetizer {
         startNewGame()
     }
 
-    // Alternates true and false
-    private var isAlphabetized = false
 
     ///  Checks if tiles are in alphabetical order
     func submit() {
@@ -26,9 +24,7 @@ class Alphabetizer {
         let alphabeticallySortedTiles = tiles.sorted {
             $0.word.lexicographicallyPrecedes($1.word)
         }
-
-        // TODO: Compare alphabetical order to position
-        isAlphabetized.toggle()
+        let isAlphabetized = userSortedTiles == alphabeticallySortedTiles
 
         // If alphabetized, increment the score
         if isAlphabetized {
