@@ -13,6 +13,7 @@ class Alphabetizer {
 
     ///  Checks if tiles are in alphabetical order
     func Submit() {
-
+        // TODO: Implement submit
+        score += 1
     }
 }
