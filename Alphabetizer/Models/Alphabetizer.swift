@@ -10,4 +10,9 @@ class Alphabetizer {
     init(vocab: Vocabulary = .oceanAnimals) {
         self.vocab = vocab
     }
+
+    ///  Checks if tiles are in alphabetical order
+    func Submit() {
+
+    }
 }
