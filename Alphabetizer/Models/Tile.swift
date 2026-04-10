@@ -20,6 +20,6 @@ class Tile: Identifiable {
 
 extension Tile: Equatable {
     static func == (lhs: Tile, rhs: Tile) -> Bool {
-
+        lhs.id == rhs.id
     }
 }
