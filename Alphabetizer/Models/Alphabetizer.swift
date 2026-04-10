@@ -1,5 +1,6 @@
 import Foundation
 
+@Observable
 class Alphabetizer {
     private let tileCount = 3
     private var vocab: Vocabulary
