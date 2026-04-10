@@ -49,6 +49,9 @@ class Alphabetizer {
             }
 
             // Flip tiles back to words
+            for tile in tiles {
+                tile.flipped = false
+            }
 
             // Display instructions
         }
