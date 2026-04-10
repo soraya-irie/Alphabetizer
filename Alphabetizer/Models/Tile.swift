@@ -14,7 +14,6 @@ class Tile: Identifiable {
     }
 
     var icon: String {
-        // FIXME: Lookup an icon matching the word
-        "🤷"
+        Vocabulary.icons[word] ?? "🤷"
     }
 }
