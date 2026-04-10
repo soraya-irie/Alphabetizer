@@ -14,8 +14,10 @@ struct SubmitButton: View {
                 .padding(.vertical, 20)
                 .background(RoundedRectangle(cornerRadius: 30)
                     .fill(Color.purple)
+                    .opacity(isEnabled ? 1.0 : 0.5)
                 )
         }
+        .animation(.default, value: isEnabled)
         .disabled(!isEnabled)
     }
 
