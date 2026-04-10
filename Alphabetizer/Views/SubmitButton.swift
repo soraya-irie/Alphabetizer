@@ -16,6 +16,11 @@ struct SubmitButton: View {
                     .fill(Color.purple)
                 )
         }
+        .disabled(!isEnabled)
+    }
+
+    var isEnabled: Bool {
+        alphabetizer.message == .instructions
     }
 }
 
