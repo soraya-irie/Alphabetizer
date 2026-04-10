@@ -29,6 +29,7 @@ class Alphabetizer {
         }
 
         // Update the message to win or lose
+        message = isAlphabetized ? .youWin : .tryAgain
 
         // Flip over correct tiles
 
