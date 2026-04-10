@@ -43,6 +43,10 @@ class Alphabetizer {
             try await Task.sleep(for: .seconds(2))
 
             // If alphabetized, generate new tiles
+            if isAlphabetized {
+                tiles.removeAll()
+                startNewGame()
+            }
 
             // Flip tiles back to words
 
